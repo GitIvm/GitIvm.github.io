@@ -1,58 +1,72 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
     margin: 0;
     padding: 0;
+    background-color: #f4f4f4;
 }
 
-.container {
-    width: 90%;
-    max-width: 600px;
-    margin: 50px auto;
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+.title {
     text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 20px;
 }
 
-h1 {
-    color: #333;
+.player-container {
+    text-align: center;
+    margin-top: 20px;
 }
 
-audio {
+.player {
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    margin-bottom: 20px;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.player audio {
     width: 100%;
-    margin-top: 20px;
-}
-
-button {
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-    margin-top: 20px;
-}
-
-button:hover {
-    background-color: #0056b3;
-}
-
-button:focus {
+    border-radius: 15px;
     outline: none;
 }
 
-#lyrics {
-    text-align: left;
-    margin-top: 20px;
-    overflow: auto; /* Добавлено свойство overflow */
+.buttons {
+    margin-bottom: 20px;
 }
 
-/* Responsive adjustments */
-@media only screen and (max-width: 768px) {
-    .container {
-        width: 90%;
-        max-width: 90%;
-    }
+.buttons button {
+    margin: 10px;
+    padding: 12px 24px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+}
+
+.buttons button:hover {
+    background-color: #0056b3;
+}
+
+
+.lyrics-container {
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    display: none;
+    margin: 0 auto;
+    max-width: 600px; /* Уменьшаем ширину контейнера */
+}
+
+.lyrics-container pre {
+    white-space: pre-wrap;
+    text-align: center; /* Центрируем текст */
+    margin: 0; /* Убираем отступы */
+    padding: 0; /* Убираем отступы */
 }
