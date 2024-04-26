@@ -46,6 +46,7 @@ button:focus {
 #lyrics {
     text-align: left;
     margin-top: 20px;
+    overflow: auto; /* Добавлено свойство overflow */
 }
 
 /* Responsive adjustments */
